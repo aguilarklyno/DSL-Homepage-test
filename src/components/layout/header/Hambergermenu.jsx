@@ -13,7 +13,7 @@ export default function Hambergermenu() {
   return (
     <div className="flex sm:text-black">
       <nav>
-        <section className="MOBILE-MENU sm:mr-1 lg:mr-3">
+        <section className="MOBILE-MENU text-white mr-2 sm:mr-1 lg:mr-3">
           <div
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
