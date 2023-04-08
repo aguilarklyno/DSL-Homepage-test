@@ -105,18 +105,18 @@ export default function Hero({ hero }) {
 
   return (
     <div className="text-white h-full w-full pt-32 mb-16 space-y-8">
-      <h1 className="text-xl lg:text-3xl xl:text-4xl font-bold text-center p-2">
+      <h1 className="text-xl lg:text-3xl xl:text-4xl lg:mt-8 font-bold text-center p-2">
         Welcome to <br className="md:hidden" />
-        <span className="text-4xl lg:text-5xl xl:text-6xl">
+        <span className="text-3xl lg:text-5xl xl:text-6xl">
           Data Sciecne League
         </span>
       </h1>
       <div className="flex flex-col">
         <div>
           <Global styles={globalStyles} />
-          <div className="w-full flex flex-col lg:flex-row justify-between items-center space-y-12 lg:space-y-0">
+          <div className="w-full flex flex-col lg:flex-row lg:mt-24 justify-between items-center space-y-12 lg:space-y-0">
             <SlideShow />
-            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12 text-lg xl:text-2xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[20px_35px_60px_20px_rgba(0,0,0,0.3)] bg-white/30">
+            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12 text-lg xl:text-2xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[20px_35px_60px_20px_rgba(0,0,0,0.3)] bg-white/20 lg:bg-blue-700/30">
               Data Science
               Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
               <br />

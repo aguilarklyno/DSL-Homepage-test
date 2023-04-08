@@ -47,7 +47,7 @@ function Header() {
                 height: 'auto',
               }}
             />
-            <div className='block lg:text-lg font-thin '>
+            <div className='block text-xs sm:text-base lg:text-lg font-thin '>
               Data Science League
             </div>
           </div>
