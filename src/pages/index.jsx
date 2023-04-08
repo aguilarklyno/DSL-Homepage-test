@@ -53,15 +53,10 @@ export default function Home({ news, hero, bigNews }) {
         </div>
 
         <div className="w-full">
-          <div className="sm:w-11/12 lg:w-4/5 m-auto base-layout space-y-2 bg-blue-950/80 text-white">
-            <Title text={`最新情報`} />
+          <div className="sm:w-11/12 lg:w-4/5 m-auto base-layout rounded-3xl space-y-2 bg-blue-950/80 text-white">
+            <Title text={`最新情報 - What's New -`} />
             <News news={news} />
-            <Title text={`活動`} />
-            <ButtonFill
-              bg="border-2 border-yellow-300 bg-white text-black w-fit m-auto text-sm"
-              link={'/overview/members'}
-              text="一覧をみる"
-            />
+            <Title text={`活動 - Activities - `} />
             <Schedule />
           </div>
         </div>

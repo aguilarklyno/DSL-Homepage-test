@@ -33,7 +33,7 @@ function Header() {
         className='w-3/5 max-w-xs'
         href='/'
         >
-          <div className='flex justify-start items-center'>
+          <div className='absolute top-5 left-2 sm:left-4 md:left-8  flex justify-start items-center'>
             <Image
               src="/logo.png"
               alt=""

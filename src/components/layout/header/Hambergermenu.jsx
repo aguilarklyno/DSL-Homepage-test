@@ -14,7 +14,8 @@ export default function Hambergermenu() {
     <div className="flex sm:text-black">
       <nav>
         <section className="MOBILE-MENU text-white mr-2 sm:mr-1 lg:mr-3">
-          <div
+          <button
+            className="absolute top-0 right-0 mr-2 sm:mr-1 lg:mr-3 mt-8"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
             <svg
@@ -28,15 +29,15 @@ export default function Hambergermenu() {
                 clipRule="evenodd"
               />
             </svg>
-          </div>
+          </button>
 
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> 
-            <div
+          <div className={`text-white absolute bg-cover bg-[url('/bg/bg05.jpg')] ${isNavOpen ? "showMenuNav" : "hideMenuNav"}`}> 
+            <button
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
               <svg
-                className="h-8 w-8 text-gray-600"
+                className="h-8 w-8 text-white"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -47,7 +48,7 @@ export default function Hambergermenu() {
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
-            </div>
+            </button>
 
 
             <ul className="MENU-LINK-MOBILE-OPEN mt-24 flex flex-col justify-center w-full items-center">
@@ -95,23 +96,36 @@ export default function Hambergermenu() {
 
       </nav>
       <style>{`
-      .hideMenuNav {
-        display: none;
-      }
-      .showMenuNav {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        background: white;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-      }
+.hideMenuNav {
+  display: block;
+  height: 100vh;
+  opacity: 0;
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.showMenuNav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  // background: white;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  opacity: 1;
+  transform: translateX(0%);
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
     `}</style>
     </div>
   );
@@ -158,7 +172,7 @@ export function Organization({ setIsNavOpen }) {
                 onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
                   href="/overview/organization"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100 text-gray-900' : 'text-white',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -172,7 +186,7 @@ export function Organization({ setIsNavOpen }) {
                 onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
                   href="/overview/members"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100 text-gray-900' : 'text-white',
                     'block px-4 py-2 text-sm'
                   )}
                 >
@@ -220,7 +234,7 @@ export function Contract({ setIsNavOpen }) {
                   onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
                   href="/contacts/register"
                   className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100 text-gray-900' : 'text-white',
                     'block px-4 py-2 text-sm'
                   )}
                 >

@@ -31,6 +31,9 @@ module.exports = {
           '100%': { transform: 'translateX(0%)' },
         },
       },
+      transitionProperty: {
+        'slide': 'transform, opacity',
+      },
       animation: {
         'spin-slow-30': 'spin 30s linear infinite',
         'spin-slow-25': 'spin 25s linear infinite',
