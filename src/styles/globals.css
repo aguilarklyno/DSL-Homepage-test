@@ -1,3 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .base-layout {
+    @apply flex flex-col justify-center items-center
+  }
+  .layout-contents {
+    @apply w-4/5 lg:w-3/5 flex flex-col justify-center items-center
+  }
+  .section-bg-lg {
+    @apply h-_Section-md bg-cover bg-center md:h-_Section-lg lg:h-_Section-xl
+  }
+  .section-bg-md {
+    @apply h-_Section-sm bg-cover bg-center md:h-_Section-md lg:h-_Section-md
+  }
+  .section-bg-hero {
+    @apply h-[12rem] sm:h-[18rem] md:h-[21rem] lg:h-[23rem]
+  }
+  .footer-text {
+    @apply text-2xs sm:text-xs lg:text-sm
+  }
+  .footer-title {
+    @apply text-xs sm:text-base lg:text-2xl font-semibold
+  }
+}
+
+/* 
+.loopSlide {
+  @apply relative flex w-screen overflow-hidden;
+}
+
+.first-ul, .second-ul {
+  @apply absolute top-0 left-0 w-screen flex flex-shrink-0;
+}
+
+
+.item {
+  @apply inline-block w-full min-w-[150px] mr-5 list-none text-center;
+}
+
+.item img,
+.item :global(.next-image) {
+  @apply block w-full h-auto;
+}
+
+
+.first-ul {
+  animation: slide1 10s 0s linear infinite;
+}
+
+.second-ul {
+  animation: slide2 10s -5s linear infinite;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+} */
