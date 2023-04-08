@@ -8,31 +8,26 @@ import Title from '@/components/atoms/Title'
 import { useState, useEffect } from 'react'
 import ButtonFill from '@/components/atoms/ButtonFill'
 
-export default function Home({
-  news,
-  hero,
-  bigNews,
-}) {
-
-  const [scrolled, setScrolled] = useState(false);
+export default function Home({ news, hero, bigNews }) {
+  const [scrolled, setScrolled] = useState(false)
 
   const scrollHandler = () => {
-    const offset = window.scrollY;
-    const windowHeight = window.innerHeight;
+    const offset = window.scrollY
+    const windowHeight = window.outerHeight
 
     if (offset > windowHeight / 2) {
-      setScrolled(true);
+      setScrolled(true)
     } else {
-      setScrolled(false);
+      setScrolled(false)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollHandler);
+    window.addEventListener('scroll', scrollHandler)
     return () => {
-      window.removeEventListener('scroll', scrollHandler);
-    };
-  }, []);
+      window.removeEventListener('scroll', scrollHandler)
+    }
+  }, [])
 
   return (
     <>
@@ -43,17 +38,22 @@ export default function Home({
         <link rel="icon" href="/logo.png" />
       </Head>
       <main
-        className={`overflow-hidden bg-cover bg-center transition-all duration-1000 ${
-          scrolled ? "bg-[url('/bg/bg07.jpg')] " : "bg-[url('/bg/bg07.jpg')]"
-        }`}
+        className={`
+              overflow-hidden bg-cover bg-center transition-all duration-300 ${
+                scrolled
+                  ? "bg-[url('/bg/bg07.jpg')] "
+                  : "bg-[url('/bg/bg08.jpg')]"
+              }`}
       >
-        <div className="h-screen bg-cover bg-center bg-[url('/bg/bg07.jpg')]">
+        <div className="h-screen bg-cover bg-center ">
           <Hero hero={hero} />
         </div>
+        <div className="h-screen flex justify-center items-center bg-cover bg-center">
+          <BigNews bigNews={bigNews} />
+        </div>
+
         <div className="w-full">
-          <div className="sm:w-11/12 lg:w-4/5 m-auto base-layout space-y-4 bg-blue-950/80 text-white">
-            <Title text={`イベント情報`} />
-            <BigNews bigNews={bigNews} />
+          <div className="sm:w-11/12 lg:w-4/5 m-auto base-layout space-y-2 bg-blue-950/80 text-white">
             <Title text={`最新情報`} />
             <News news={news} />
             <Title text={`活動`} />

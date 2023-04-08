@@ -116,7 +116,7 @@ export default function Hero({ hero }) {
           <Global styles={globalStyles} />
           <div className="w-full flex flex-col lg:flex-row lg:mt-24 justify-between items-center space-y-12 lg:space-y-0">
             <SlideShow />
-            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12 text-lg xl:text-2xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[20px_35px_60px_20px_rgba(0,0,0,0.3)] bg-white/20 lg:bg-blue-700/30">
+            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12 text-lg xl:text-2xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[20px_35px_60px_20px_rgba(0,0,0,0.3)] bg-white/20 lg:bg-blue-400/40">
               Data Science
               Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
               <br />

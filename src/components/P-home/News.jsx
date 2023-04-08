@@ -4,10 +4,8 @@ import ButtonFill from '@/components/atoms/ButtonFill'
 
 export default function News({ news }) {
   return (
-    <div className="layout-contents space-y-2 text-black">
-      <div className=" w-full flex flex-col p-4 space-y-4 rounded-lg">
-        <div className="w-full">
-        </div>
+    <div className="w-4/5 space-y-2 text-black">
+      <div className=" w-full flex flex-col p-2 space-y-4 rounded-lg">
         <ul>
           {news.map((item) => (
             <li
