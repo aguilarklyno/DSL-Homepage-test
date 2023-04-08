@@ -1,36 +1,37 @@
-import '@/styles/globals.css';
-import { useState, useEffect } from 'react';
-import Header from '../components/layout/header/Header';
-import Footer from '@/components/layout/Footer';
+import '@/styles/globals.css'
+import { useState, useEffect } from 'react'
+import Header from '../components/layout/header/Header'
+import Footer from '@/components/layout/Footer'
+import Hambergermenu from '@/components/layout/header/Hambergermenu'
 
 export default function App({ Component, pageProps }) {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false)
 
   const scrollHandler = () => {
-    const offset = window.scrollY;
-    const windowHeight = window.innerHeight;
+    const offset = window.scrollY
+    const windowHeight = window.innerHeight
 
     if (offset > windowHeight / 2) {
-      setScrolled(true);
+      setScrolled(true)
     } else {
-      setScrolled(false);
+      setScrolled(false)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollHandler);
+    window.addEventListener('scroll', scrollHandler)
     return () => {
-      window.removeEventListener('scroll', scrollHandler);
-    };
-  }, []);
+      window.removeEventListener('scroll', scrollHandler)
+    }
+  }, [])
 
   return (
-    <div
-      className="bg-cover bg-center bg-[url('/bg/bg04.jpg')]"
-    >
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+    <div className=" bg-blue-900">
+      <div className="border-white border-r-2 sm:mr-12 lg:mr-16 bg-cover bg-center bg-[url('/bg/bg07.jpg')]">
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </div>
-  );
+  )
 }

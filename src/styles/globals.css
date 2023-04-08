@@ -26,50 +26,14 @@
   }
 }
 
-/* 
-.loopSlide {
-  @apply relative flex w-screen overflow-hidden;
+/* styles/globals.css */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  object-fit: cover;
 }
-
-.first-ul, .second-ul {
-  @apply absolute top-0 left-0 w-screen flex flex-shrink-0;
-}
-
-
-.item {
-  @apply inline-block w-full min-w-[150px] mr-5 list-none text-center;
-}
-
-.item img,
-.item :global(.next-image) {
-  @apply block w-full h-auto;
-}
-
-
-.first-ul {
-  animation: slide1 10s 0s linear infinite;
-}
-
-.second-ul {
-  animation: slide2 10s -5s linear infinite;
-}
-
-@keyframes slide1 {
-  0% {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slide2 {
-  0% {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-} */

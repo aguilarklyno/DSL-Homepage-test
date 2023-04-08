@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import styled from '@emotion/styled'
 import { Global, css } from '@emotion/react'
+import SlideShow from './SlideShow'
 
 const Slide = styled.div`
   position: absolute;
@@ -103,39 +104,28 @@ export default function Hero({ hero }) {
   }, [goToNextImage])
 
   return (
-    <div className="text-black h-full w-full mt-24 mb-16 space-y-8">
-      <h1 className="text-4xl font-bold text-center p-2">Welcome to Data Sciecne Leageu</h1>
+    <div className="text-white h-full w-full pt-32 mb-16 space-y-8">
+      <h1 className="text-xl lg:text-3xl xl:text-4xl font-bold text-center p-2">
+        Welcome to <br className="md:hidden" />
+        <span className="text-4xl lg:text-5xl xl:text-6xl">
+          Data Sciecne League
+        </span>
+      </h1>
       <div className="flex flex-col">
         <div>
           <Global styles={globalStyles} />
-          <div className="relative w-11/12 sm:w-9/12 lg:w-7/12 h-full aspect-video m-auto section-bg-hero">
-            <TransitionGroup>
-              <CSSTransition
-                key={currentImage}
-                classNames={reverse ? 'slide-prev' : 'slide'}
-                timeout={500}
-              >
-                <Slide>
-                  {images2.map((image, index) => {
-                    if (index === currentImage) {
-                      return (
-                        <div
-                          key={index}
-                          className="w-full aspect-video bg-cover"
-                          style={{
-                            backgroundImage: `url(${image})`,
-                            backgroundSize: 'contain',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                          }}
-                        ></div>
-                      )
-                    }
-                    return null
-                  })}
-                </Slide>
-              </CSSTransition>
-            </TransitionGroup>
+          <div className="w-full flex flex-col lg:flex-row justify-between items-center space-y-12 lg:space-y-0">
+            <SlideShow />
+            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12 text-lg xl:text-2xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[20px_35px_60px_20px_rgba(0,0,0,0.3)] bg-white/30">
+              Data Science
+              Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
+              <br />
+              <br />
+              <span className="text-base xl:text-xl">
+                Data Science League is, as the name implies, the largest and
+                best student organization dedicated to data science.
+              </span>
+            </div>
           </div>
         </div>
       </div>

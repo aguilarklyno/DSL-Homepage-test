@@ -44,12 +44,14 @@ export default function Home({
       </Head>
       <main
         className={`overflow-hidden bg-cover bg-center transition-all duration-1000 ${
-          scrolled ? "bg-[url('/bg/bg.jpg')] " : "bg-[url('/bg/bg04.jpg')]"
+          scrolled ? "bg-[url('/bg/bg07.jpg')] " : "bg-[url('/bg/bg07.jpg')]"
         }`}
       >
-        <Hero hero={hero} />
+        <div className="h-screen bg-cover bg-center bg-[url('/bg/bg07.jpg')]">
+          <Hero hero={hero} />
+        </div>
         <div className="w-full">
-          <div className="sm:w-11/12 lg:w-4/5 m-auto rounded-t-3xl base-layout space-y-4 bg-blue-950/80 text-white border-[1px] border-gray-200">
+          <div className="sm:w-11/12 lg:w-4/5 m-auto base-layout space-y-4 bg-blue-950/80 text-white">
             <Title text={`イベント情報`} />
             <BigNews bigNews={bigNews} />
             <Title text={`最新情報`} />

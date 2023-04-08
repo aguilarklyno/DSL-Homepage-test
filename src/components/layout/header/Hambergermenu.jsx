@@ -11,16 +11,22 @@ export default function Hambergermenu() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex">
-
+    <div className="flex sm:text-black">
       <nav>
-        <section className="MOBILE-MENU  lg:hidden">
+        <section className="MOBILE-MENU sm:mr-1 lg:mr-3">
           <div
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-10 h-10">
-              <path fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
-              clipRule="evenodd" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-10 h-10">
+              <path
+                fillRule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+                clipRule="evenodd"
+              />
             </svg>
           </div>
 
@@ -222,32 +228,6 @@ export function Contract({ setIsNavOpen }) {
                 </Link>
               )}
             </Menu.Item>
-            {/* <Menu.Item>
-              {({ active }) => (
-                <Link
-                  href="/contacts/faq"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  よくある質問
-                </Link>
-              )}
-            </Menu.Item> */}
-            {/* <Menu.Item>
-              {({ active }) => (
-                <Link
-                  href="/contacts/form"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  お問合せフォーム
-                </Link>
-              )}
-            </Menu.Item> */}
           </div>
         </Menu.Items>
       </Transition>

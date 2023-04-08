@@ -4,9 +4,9 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-      <div className='w-full section-bg-lg footer-text flex flex-col justify-center items-center'>
-        <div className='w-full h-1/2 flex flex-col'>
-          <div className='w-full h-1/2 flex justify-center items-center'>
+      <div className='w-full h-fit section-bg-lg footer-text flex flex-col justify-center items-center'>
+        <div className='w-full h-1/2  flex flex-col'>
+          {/* <div className='w-full h-1/2 flex justify-center items-center'>
             <Link
               className='w-1/2 h-full bg-yellow-400 flex flex-col justify-center items-center'
               href="/contacts/register"
@@ -41,31 +41,35 @@ export default function Footer() {
                 </p>
               </div>
             </Link>
-          </div>
-          <div className='w-full h-1/2 bg-gray-300 flex flex-col justify-center items-center'>
+          </div> */}
+          <div className='w-full h-1/2 py-12 bg-gray-300 flex flex-col justify-center items-center'>
             <div className='flex flex-col space-y-2'>
               <p className='footer-title text-center'>
                 お問合せ
               </p>
               <p className='text-center'>
-                一般社団法人 金融データ活用推進協会までお気軽にご連絡ください。<br/>
-                メールアドレス：financial_data@fdua.org
+                データサイエンス特化型学生団体 Data Science Leagueまでお気軽にご連絡ください。<br/>
+                メールアドレス：datascienceleague117@gmail.com
               </p>
             </div>
           </div>
         </div>
+
         <div className='w-full h-1/2 flex flex-col'>
-          <div className='w-full h-5/6 bg-white flex justify-center items-center space-x-2'>
-            <div className='w-1/4 h-4/5'>
+          <div className='w-full h-5/6 py-4 bg-white flex flex-col lg:flex-row justify-center lg:items-start space-x-2'>
+            <div className='w-3/5 lg:w-3/5 mx-auto flex flex-col space-y-4 sm:space-y-0 sm:flex-row'>
+
+              <div className='sm:w-1/2 sm:h-4/5'>
               <ul className=''>
-                <li>一般社団法人</li>
-                <li className='footer-title'>金融データ活用推進協会</li>
+                <li>データサイエンス特化型学生団体</li>
+                <li className='footer-title'>Data Sciecne League</li>
                 <li>2022.4.25</li>
-                <li>東京都千代田区大手町一丁目6番1号</li>
-                <li>financial_data@fdua.org</li>
+                {/* <li>東京都千代田区大手町一丁目6番1号</li> */}
+                {/* <li>financial_data@fdua.org</li> */}
               </ul>
             </div>
-            <div className='w-1/4 h-4/5'>
+
+            <div className='sm:w-1/2 sm:h-4/5'>
               <p className='footer-title'>
                 Sitemap
               </p>
@@ -105,16 +109,9 @@ export default function Footer() {
                     お問合せフォーム
                   </Link>
                 </li>
-                <li>プライバシーポリシー</li>
+                {/* <li>プライバシーポリシー</li> */}
               </ul>
             </div>
-            <div className='w-1/4 h-4/5'>
-              <p className='footer-title'>
-                Official SNS
-              </p>
-              <p>
-                SNSを登録してFDUAの最新情報をGET!!
-              </p>
             </div>
           </div>
           <div className='w-full h-1/6 bg-yellow-200 flex justify-center items-center'>
