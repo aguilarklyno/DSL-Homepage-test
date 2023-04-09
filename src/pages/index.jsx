@@ -41,7 +41,7 @@ export default function Home({ news, hero, bigNews }) {
         className={`
               overflow-hidden bg-cover bg-center transition-all duration-1000 bg-[url('/bg/bg07.jpg')]`}
       >
-        <div className="h-fit bg-cover bg-center ">
+        <div className="h-fit bg-cover bg-center bg-black/30">
           <Hero hero={hero} />
         </div>
         <div className="h-fit flex justify-center items-center bg-cover bg-center">
