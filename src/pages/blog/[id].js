@@ -1,6 +1,6 @@
 import React from 'react'
 import { client } from 'libs/client';
-import PageTitle from '@/components/atmos/PageTitle';
+import PageTitle from '@/components/atoms/PageTitle';
 
 export default function BlogId({ blog }) {
   return (
@@ -10,7 +10,7 @@ export default function BlogId({ blog }) {
         <div
           className='w-11/12 sm:w-10/12 lg:w-9/12 text-xs sm:text-sm lg:text-md '
           dangerouslySetInnerHTML={{
-            __html: `${blog.body}`,
+            __html: `${blog.content}`,
           }}
         />
       </div>
@@ -22,7 +22,7 @@ export default function BlogId({ blog }) {
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "blogs" });
 
-  const paths = data.contents.map((content) => `/blogs/${content.id}`);
+  const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { paths, fallback: false };
 };
 
