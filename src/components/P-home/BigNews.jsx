@@ -32,7 +32,7 @@ export default function BigNews({ bigNews }) {
                 href={`/blog/${item.id}`}
                 className="w-11/12 sm:w-1/4 m-1 text-xs h-[10rem] sm:h-[15rem] lg:h-[20rem] 2xl:h-[25rem] bg-white/50 rounded-md object-covershadow-xl"
               >
-                <div className="mt-2 mb-1 pl-4">{item.date}</div>
+                <div className="mt-2 mb-1 pl-4 text-white">{item.date}</div>
                 <div
                   key={index}
                   className="relative left-2 w-full h-full flex items-center rounded-md overflow-hidden transition transform hover:-translate-y-2 hover:scale-105 "

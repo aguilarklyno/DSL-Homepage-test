@@ -59,7 +59,7 @@ export default function Hambergermenu() {
                   className="w-4/5 border-b-2 py-4 border-gray-400"
                   href="/"
                 >
-                  ホーム
+                  ホーム<span className="pl-4 text-xs">-Home-</span>
                 </Link>
               </li>
               <li
@@ -78,7 +78,7 @@ export default function Hambergermenu() {
                   className="w-4/5 border-b-2 py-4 border-gray-400"
                   href="/news"
                 >
-                  活動内容
+                  活動内容<span className="pl-4 text-xs">-Activities-</span>
                 </Link>
               </li>
               <li
@@ -146,7 +146,7 @@ export function Organization({ setIsNavOpen }) {
       <div className="flex justify-around w-full">
         <Menu.Button className="flex w-full justify-between">
           <p>
-            協会概要
+            団体について<span className="pl-4 text-xs">-About Data Sciecne League-</span>
           </p>
           <ChevronDownIcon
             className="block mr-4 h-5 w-5" aria-hidden="true"
@@ -170,13 +170,13 @@ export function Organization({ setIsNavOpen }) {
               {({ active }) => (
                 <Link
                 onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
-                  href="/overview/organization"
+                  href="/organization/about"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-white',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  理事・委員会
+                  団体概要<span className="pl-4 text-xs">-About us-</span>
                 </Link>
               )}
             </Menu.Item>
@@ -184,13 +184,13 @@ export function Organization({ setIsNavOpen }) {
               {({ active }) => (
                 <Link
                 onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
-                  href="/overview/members"
+                  href="/organization/members"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-white',
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  会員
+                  運営メンバー<span className="pl-4 text-xs">-Core members-</span>
                 </Link>
               )}
             </Menu.Item>
@@ -208,7 +208,7 @@ export function Contract({ setIsNavOpen }) {
       <div className="flex justify-around w-full">
         <Menu.Button className="flex w-full justify-between">
           <p>
-            お問合せ
+            お問合せ<span className="pl-4 text-xs">-Contacts-</span>
           </p>
           <ChevronDownIcon
             className="block mr-4 h-5 w-5" aria-hidden="true"
@@ -238,7 +238,7 @@ export function Contract({ setIsNavOpen }) {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  入会申請
+                  入会申請<span className="pl-4 text-xs">-Register to DSL-</span>
                 </Link>
               )}
             </Menu.Item>

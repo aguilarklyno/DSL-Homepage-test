@@ -114,9 +114,9 @@ export default function Footer() {
             </div>
             </div>
           </div>
-          <div className='w-full h-1/6 bg-yellow-200 flex justify-center items-center'>
+          <div className='text-white py-1 w-full h-1/6 bg-blue-900 flex justify-center items-center'>
             <p>
-              @Copyright FDUA All Rights Reserved
+              @Copyright DSL All Rights Reserved
             </p>
           </div>
         </div>

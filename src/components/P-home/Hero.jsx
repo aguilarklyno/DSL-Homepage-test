@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import styled from '@emotion/styled'
 import { Global, css } from '@emotion/react'
 import SlideShow from './SlideShow'
+import Link from 'next/link'
 
 const Slide = styled.div`
   position: absolute;
@@ -112,21 +113,26 @@ export default function Hero({ hero }) {
         </span>
       </h1>
       <div className="flex flex-col">
-        <div>
           <Global styles={globalStyles} />
+        <div>
           <div className="w-full flex flex-col lg:flex-row lg:mt-24 justify-between items-center space-y-12 lg:space-y-0">
             <SlideShow />
-            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12 text-lg xl:text-2xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[20px_35px_60px_20px_rgba(0,0,0,0.3)] bg-white/20 lg:bg-blue-400/40">
-              Data Science
-              Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
-              <br />
-              <br />
-              <span className="text-base xl:text-xl">
+            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12 text-lg xl:text-xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[0px_0px_10px_3px_rgba(255,255,255,0.8)] bg-white/20 lg:bg-blue-400/40">
+              <span className='text-center px-8'>
+                Data Science
+                Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
+              </span>
+              <span className="text-base xl:text-lg px-8">
                 Data Science League is, as the name implies, the largest and
                 best student organization dedicated to data science.
               </span>
             </div>
           </div>
+            <Link
+              href='/organization/about'
+              className='block w-fit h-fit text-xl sm:text-3xl lg:text-3xl  p-4 m-auto my-8 text-center rounded-xl transition-all duration-300 bg-white/10 hover:bg-white/40 border-[0.5px] border-white shadow-[0px_0px_10px_3px_rgba(255,255,255,0.8)]'>
+              About Us
+            </Link>
         </div>
       </div>
     </div>
