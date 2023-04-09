@@ -18,7 +18,7 @@ export default function BigNews({ bigNews }) {
   ]
 
   return (
-    <div className="w-11/12 space-y-8">
+    <div className="flex flex-col h-fit w-11/12 space-y-8">
       <div className="w-11/12 sm:w-3/4 m-auto ">
         <h1 className='w-1/3 text-white text-5xl border-b-4 border-white'>News</h1>
       </div>

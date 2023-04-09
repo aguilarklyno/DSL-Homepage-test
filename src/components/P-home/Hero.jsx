@@ -105,7 +105,7 @@ export default function Hero({ hero }) {
   }, [goToNextImage])
 
   return (
-    <div className="text-white h-full w-full pt-32 mb-16 space-y-8">
+    <div className="text-white flex flex-col h-fit w-full pt-32 mb-16 space-y-8">
       <h1 className="text-xl lg:text-3xl xl:text-4xl lg:mt-8 font-bold text-center p-2">
         Welcome to <br className="md:hidden" />
         <span className="text-3xl lg:text-5xl xl:text-6xl">
@@ -117,12 +117,13 @@ export default function Hero({ hero }) {
         <div>
           <div className="w-full flex flex-col lg:flex-row lg:mt-24 justify-between items-center space-y-12 lg:space-y-0">
             <SlideShow />
-            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12 text-lg xl:text-xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[0px_0px_10px_3px_rgba(255,255,255,0.8)] bg-white/20 lg:bg-blue-400/40">
+            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12
+            text-sm sm:text-base  xl:text-xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[0px_0px_10px_3px_rgba(255,255,255,0.8)] bg-white/20 lg:bg-blue-400/40">
               <span className='text-center px-8'>
                 Data Science
                 Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
               </span>
-              <span className="text-base xl:text-lg px-8">
+              <span className="text-xs sm:text-sm xl:text-lg px-8">
                 Data Science League is, as the name implies, the largest and
                 best student organization dedicated to data science.
               </span>

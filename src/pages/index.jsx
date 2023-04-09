@@ -45,10 +45,10 @@ export default function Home({ news, hero, bigNews }) {
                   : "bg-[url('/bg/bg08.jpg')]"
               }`}
       >
-        <div className="h-screen bg-cover bg-center ">
+        <div className="h-fit bg-cover bg-center ">
           <Hero hero={hero} />
         </div>
-        <div className="h-screen flex justify-center items-center bg-cover bg-center">
+        <div className="h-fit flex justify-center items-center bg-cover bg-center">
           <BigNews bigNews={bigNews} />
         </div>
 
