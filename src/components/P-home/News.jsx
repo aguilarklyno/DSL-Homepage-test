@@ -20,7 +20,7 @@ export default function News({ news }) {
                   className="flex justify-start items-center space-x-2
               [&_p]:text-black"
                 >
-                  <p className="bg-yellow-200 p-1 rounded-lg text-xs">
+                  <p className="bg-blue-300 p-1 rounded-lg text-xs">
                     {item.tag}
                   </p>
                   <div className="text-xs">{item.date}</div>

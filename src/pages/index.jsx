@@ -39,11 +39,7 @@ export default function Home({ news, hero, bigNews }) {
       </Head>
       <main
         className={`
-              overflow-hidden bg-cover bg-center transition-all duration-1000 ${
-                scrolled
-                  ? "bg-[url('/bg/bg07.jpg')] "
-                  : "bg-[url('/bg/bg08.jpg')]"
-              }`}
+              overflow-hidden bg-cover bg-center transition-all duration-1000 bg-[url('/bg/bg07.jpg')]`}
       >
         <div className="h-fit bg-cover bg-center ">
           <Hero hero={hero} />
@@ -52,7 +48,7 @@ export default function Home({ news, hero, bigNews }) {
           <BigNews bigNews={bigNews} />
         </div>
 
-        <div className="w-full">
+        <div className="w-full h-fit mt-28">
           <div className="w-[95%] sm:w-11/12 lg:w-4/5 m-auto base-layout rounded-3xl space-y-2 bg-blue-950/80 text-white">
             <Title text={`最新情報 - What's New -`} />
             <News news={news} />
