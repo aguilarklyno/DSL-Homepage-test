@@ -33,7 +33,7 @@ export default function News({ news }) {
           ))}
         </ul>
         <ButtonFill
-          bg="border-2 border-yellow-300 bg-white text-black w-fit m-auto text-sm"
+          bg="border-2 border-white bg-white text-white w-fit m-auto text-[0.6rem] bg-opacity-10 hover:bg-gray-500 transition-all duration-200"
           link={'/news'}
           text="一覧をみる"
         />

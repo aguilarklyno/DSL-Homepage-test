@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return (
-    <div className=" bg-blue-900">
+    <div className=" bg-gray-900">
       <div
         className="bg-cover bg-center bg-[url('/bg/bg10.jpg')] border-white border-r-0 sm:border-r-[1px] sm:mr-12 lg:mr-16 overflow-hidden "
       >

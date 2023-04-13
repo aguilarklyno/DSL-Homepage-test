@@ -4,7 +4,7 @@ import React from 'react'
 export default function ButtonFill(props) {
   return (
     <Link
-      className={`${props.bg} px-4 py-2 rounded-full `}
+      className={`${props.bg} px-3 py-1 rounded-full`}
       href={props.link}
     >
       {props.text}
