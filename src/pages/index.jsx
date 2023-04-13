@@ -39,7 +39,7 @@ export default function Home({ news, hero, bigNews }) {
       </Head>
       <main
         className={`
-              overflow-hidden bg-cover bg-center transition-all duration-1000 bg-[url('/bg/bg07.jpg')]`}
+              overflow-hidden bg-cover bg-center transition-all duration-1000 bg-[url('/bg/bg10.jpg')]`}
       >
         <div className="h-fit bg-cover bg-center bg-black/30">
           <Hero hero={hero} />

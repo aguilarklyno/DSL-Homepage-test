@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function index() {
   return (
-    <div>index</div>
+    <div className='w-full h-screen flex justify-center items-center text-white'>
+      coming soon...
+    </div>
   )
 }

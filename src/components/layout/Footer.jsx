@@ -48,7 +48,7 @@ export default function Footer() {
                 お問合せ
               </p>
               <p className='text-center'>
-                データサイエンス特化型学生団体 Data Science Leagueまでお気軽にご連絡ください。<br/>
+                お気軽にご連絡ください。<br/>
                 メールアドレス：datascienceleague117@gmail.com
               </p>
             </div>

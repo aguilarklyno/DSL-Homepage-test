@@ -146,7 +146,7 @@ export function Organization({ setIsNavOpen }) {
       <div className="flex justify-around w-full">
         <Menu.Button className="flex w-full justify-between">
           <p>
-            団体について<span className="pl-4 text-xs">-About Data Sciecne League-</span>
+            団体について<span className="pl-4 text-xs">-About DSL-</span>
           </p>
           <ChevronDownIcon
             className="block mr-4 h-5 w-5" aria-hidden="true"

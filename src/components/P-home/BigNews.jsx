@@ -49,7 +49,7 @@ export default function BigNews({ bigNews }) {
                 >
                   <div
                     key={index}
-                    className="flex justify-center items-center w-full bg-white/80 font-semibold text-xs sm:text-md p-4"
+                    className="flex justify-center items-center w-full bg-white/80 font-semibold text-[0.6rem] p-4"
                   >
                     {item.title}
                   </div>

@@ -118,12 +118,11 @@ export default function Hero({ hero }) {
           <div className="w-full flex flex-col lg:flex-row lg:mt-24 justify-between items-center space-y-12 lg:space-y-0">
             <SlideShow />
             <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12
-            text-sm sm:text-base  xl:text-xl m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[0px_0px_10px_3px_rgba(255,255,255,0.8)] bg-white/20 lg:bg-blue-400/40">
+            text-xs sm:text-sm  m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[0px_0px_10px_3px_rgba(255,255,255,0.8)] ">
               <span className='text-center px-8'>
-                Data Science
-                Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
+                Data Science Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
               </span>
-              <span className="text-xs sm:text-sm xl:text-lg px-8">
+              <span className="text-[0.6rem] sm:text-xs xl:text-sm px-8">
                 Data Science League is, as the name implies, the largest and
                 best student organization dedicated to data science.
               </span>
@@ -131,7 +130,7 @@ export default function Hero({ hero }) {
           </div>
             <Link
               href='/organization/about'
-              className='block w-fit h-fit text-xl sm:text-3xl lg:text-3xl  p-4 m-auto my-8 text-center rounded-xl transition-all duration-300 bg-white/10 hover:bg-white/40 border-[0.5px] border-white shadow-[0px_0px_10px_3px_rgba(255,255,255,0.8)]'>
+              className='block w-fit h-fit text-xs sm:text-base p-2 m-auto my-8 text-center rounded-xl transition-all duration-300 bg-white/10 hover:bg-white/40 border-[0.5px] border-white shadow-[0px_0px_10px_3px_rgba(255,255,255,0.5)]'>
               About Us
             </Link>
         </div>
