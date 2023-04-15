@@ -82,7 +82,7 @@ export default function Hero({ hero }) {
 
   // const images = hero.map((news) => news.image.url);
 
-  const images2 = ['/hero/hero01.png', '/hero/hero02.png', '/hero/hero03.png']
+  const images2 = ['/hero/1.jpg', '/hero/2.jpg', '/hero/3.jpg']
 
   const [currentImage, setCurrentImage] = useState(0)
   const [reverse, setReverse] = useState(false)
@@ -105,32 +105,22 @@ export default function Hero({ hero }) {
   }, [goToNextImage])
 
   return (
-    <div className="text-white flex flex-col h-fit w-full pt-32 mb-16 space-y-8">
-      <h1 className="text-xl lg:text-3xl xl:text-4xl lg:mt-8 font-bold text-center p-2">
+    <div className="text-white flex flex-col h-fit w-full max-w-[60rem] m-auto pt-20">
+      {/* <h1 className="text-sm sm:text-lg lg:text-3xl xl:text-4xl lg:mt-8 font-bold text-center p-2">
         Welcome to <br className="md:hidden" />
-        <span className="text-3xl lg:text-5xl xl:text-6xl">
+        <span className="text-base sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl">
           Data Sciecne League
         </span>
-      </h1>
+      </h1> */}
       <div className="flex flex-col">
           <Global styles={globalStyles} />
         <div>
-          <div className="w-full flex flex-col lg:flex-row lg:mt-24 justify-between items-center space-y-12 lg:space-y-0">
+          <div className="w-full flex flex-col lg:flex-row justify-between items-center space-y-12 lg:space-y-0">
             <SlideShow />
-            <div className="h-fit w-11/12 sm:w-10/12 lg:w-5/12
-            text-xs sm:text-sm  m-2 lg:m-6 p-4 rounded-2xl flex flex-col justify-center items-start font-semibold shadow-[0px_0px_10px_3px_rgba(255,255,255,0.5)] ">
-              <span className='text-center px-8'>
-                Data Science Leagueとはその名の通りデータサイエンスに特化した最大かつ最高の学生団体です。
-              </span>
-              <span className="text-[0.6rem] sm:text-xs xl:text-sm px-8">
-                Data Science League is, as the name implies, the largest and
-                best student organization dedicated to data science.
-              </span>
-            </div>
           </div>
             <Link
               href='/organization/about'
-              className='block w-fit h-fit text-xs sm:text-base p-2 m-auto my-8 text-center rounded-xl transition-all duration-300 bg-white/10 hover:bg-white/40 border-[0.5px] border-white'>
+              className='block w-fit h-fit text-xs sm:text-base p-2 m-auto my-6 text-center rounded-xl transition-all duration-300 bg-white/10 hover:bg-white/40 border-[0.5px] border-white'>
               About Us
             </Link>
         </div>

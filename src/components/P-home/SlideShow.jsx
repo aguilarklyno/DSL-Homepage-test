@@ -35,7 +35,7 @@ export default function SlideShow() {
 
   // const images = hero.map((news) => news.image.url);
 
-  const images2 = ['/hero/hero01.png', '/hero/hero02.png', '/hero/hero03.png']
+  const images2 = ['/hero/1.jpg', '/hero/2.jpg', '/hero/3.jpg']
 
   const [currentImage, setCurrentImage] = useState(0)
   const [reverse, setReverse] = useState(false)
@@ -59,7 +59,7 @@ export default function SlideShow() {
 
 
   return (
-    <div className="relative m-2 w-11/12 sm:w-10/12 lg:w-7/12 h-full aspect-video  section-bg-hero">
+    <div className="relative  w-full h-full aspect-video  section-bg-hero">
     <TransitionGroup>
       <CSSTransition
         key={currentImage}

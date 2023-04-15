@@ -20,7 +20,7 @@ export default function BigNews({ bigNews }) {
   return (
     <div className="flex flex-col h-fit w-11/12 space-y-8">
       <div className="w-11/12 sm:w-3/4 m-auto ">
-        <h1 className='w-1/3 text-white text-5xl border-b-4 border-white'>News</h1>
+        {/* <h1 className='w-1/3 text-white text-5xl border-b-4 border-white'>News</h1> */}
       </div>
       <div className="relative w-full flex flex-col sm:flex-row justify-center items-center space-y-12 sm:space-y-0 sm:space-x-8">
         {bigNews.map((item, index) => {

@@ -6,7 +6,7 @@ import BigNews from '@/components/P-home/BigNews'
 import News from '@/components/P-home/News'
 import Title from '@/components/atoms/Title'
 import { useState, useEffect } from 'react'
-import ButtonFill from '@/components/atoms/ButtonFill'
+import Question from '@/components/P-home/Question'
 
 export default function Home({ news, hero, bigNews }) {
   const [scrolled, setScrolled] = useState(false)
@@ -41,7 +41,7 @@ export default function Home({ news, hero, bigNews }) {
         className={`
               overflow-hidden bg-cover bg-center transition-all duration-1000 bg-[url('/bg/bg10.jpg')]`}
       >
-        <div className="h-fit bg-cover bg-center bg-black/30">
+        <div className="h-fit">
           <Hero hero={hero} />
         </div>
         <div className="h-fit flex justify-center items-center bg-cover bg-center">
@@ -49,13 +49,14 @@ export default function Home({ news, hero, bigNews }) {
         </div>
 
         <div className="w-full h-fit mt-28">
-          <div className="w-[95%] sm:w-11/12 lg:w-4/5 m-auto base-layout rounded-3xl space-y-2 bg-blue-950/80 text-white">
+          <div className="w-[95%] sm:w-11/12 lg:w-4/5 m-auto base-layout rounded-t-3xl space-y-2 bg-blue-950/80 text-white">
             <Title text={`最新情報 - What's New -`} />
             <News news={news} />
             <Title text={`活動 - Activities - `} />
             <Schedule />
           </div>
         </div>
+        {/* <Question /> */}
       </main>
     </>
   )
