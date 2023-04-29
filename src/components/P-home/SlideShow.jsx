@@ -32,26 +32,19 @@ function useMediaQuery(query) {
 
 export default function SlideShow() {
   const isDesktop = useMediaQuery('(min-width: 1024px)')
-
-  // const images = hero.map((news) => news.image.url);
-
   const images2 = ['/hero/1.jpg', '/hero/2.jpg', '/hero/3.jpg']
-
   const [currentImage, setCurrentImage] = useState(0)
   const [reverse, setReverse] = useState(false)
-
   const goToNextImage = useCallback(() => {
     setCurrentImage(
       (prevCurrentImage) => (prevCurrentImage + 1) % images2.length
     )
     setReverse(false)
   }, [images2.length])
-
   useEffect(() => {
     const timer = setInterval(() => {
       goToNextImage()
-    }, 3000)
-
+    }, 3500)
     return () => {
       clearInterval(timer)
     }

@@ -106,23 +106,18 @@ export default function Hero({ hero }) {
 
   return (
     <div className="text-white flex flex-col h-fit w-full max-w-[60rem] m-auto pt-20">
-      {/* <h1 className="text-sm sm:text-lg lg:text-3xl xl:text-4xl lg:mt-8 font-bold text-center p-2">
-        Welcome to <br className="md:hidden" />
-        <span className="text-base sm:text-xl md:text-3xl lg:text-5xl xl:text-6xl">
-          Data Sciecne League
-        </span>
-      </h1> */}
       <div className="flex flex-col">
-          <Global styles={globalStyles} />
+        <Global styles={globalStyles} />
         <div>
           <div className="w-full flex flex-col lg:flex-row justify-between items-center space-y-12 lg:space-y-0">
             <SlideShow />
           </div>
-            <Link
-              href='/organization/about'
-              className='block w-fit h-fit text-xs sm:text-base p-2 m-auto my-6 text-center rounded-xl transition-all duration-300 bg-white/10 hover:bg-white/40 border-[0.5px] border-white'>
-              About Us
-            </Link>
+          <Link
+            href="/organization/about"
+            className="block w-fit h-fit text-xs sm:text-base p-2 m-auto my-6 text-center rounded-xl transition-all duration-300 bg-white/10 hover:bg-white/40 border-[0.5px] border-white"
+          >
+            About Us
+          </Link>
         </div>
       </div>
     </div>

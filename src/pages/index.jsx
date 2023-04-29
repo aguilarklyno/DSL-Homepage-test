@@ -37,12 +37,49 @@ export default function Home({ news, hero, bigNews }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
+
+      <header class="relative flex items-center justify-center h-screen overflow-hidden">
+        <p class="relative z-30 text-2xl text-white bg-opacity-50">
+          データサイエンス特化型学生団体<br/>
+          <span className="text-[3rem]">Data Science League へようこそ</span><br/>
+          - Welcome to Data Science League. -<br/>
+        </p>
+        <video
+          autoPlay
+          loop
+          muted
+          class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+        >
+          <source
+            src="/sample02.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </header>
+
       <main
         className={`
-              overflow-hidden bg-cover bg-center transition-all duration-1000 bg-[url('/bg/bg10.jpg')]`}
+              overflow-hidden bg-cover bg-center transition-all duration-1000 bg-black`}
       >
-        <div className="h-fit">
-          <Hero hero={hero} />
+        <div className="h-fit w-[95%] sm:w-11/12 lg:w-4/5  m-auto">
+          <Title text="あいさつ"/>
+          <div>
+            <p className="text-white text-base w-[80%] m-auto my-4">
+              私たちはデータサイエンス特化型学生団体、Data Science Leagueです。<br/>
+              私たちはデータサイエンスに興味を持つ学生が集まり、<br/>
+              データサイエンスに関する勉強会やハッカソンを開催しています。<br/>
+              また、データサイエンスに関する情報を発信することで、<br/>
+              データサイエンスに興味を持つ学生が増えることを目指しています。<br/>
+              <br/>
+              このサイトでは、私たちの活動やデータサイエンスに関する情報を発信していきます。<br/>
+              ぜひ、私たちの活動に興味を持っていただけたら嬉しいです。<br/>
+              <br/>
+              また、私たちの活動に興味を持っていただけた方は、<br/>
+              ぜひ、活動に参加してみてください。<br/>
+              <br/>
+              皆さんと一緒にデータサイエンスを学べることを楽しみにしています！<br/>
+              </p>
+          </div>
         </div>
         <div className="h-fit flex justify-center items-center bg-cover bg-center">
           <BigNews bigNews={bigNews} />
