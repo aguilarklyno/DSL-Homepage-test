@@ -13,20 +13,6 @@ export default function index({ members }) {
         <PageTitle title="運営メンバー" subtitle="団体概要" />
         <div className="w-full flex flex-col space-y-8">
           {/* <Title text="組織図" /> */}
-          {/* <div className="relative m-auto w-4/5 ">
-            <Image
-              className="object-cover"
-              src="/organization/organization-chart02.png"
-              alt="組織図"
-              width={100}
-              height={100}
-              sizes="100vw"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-          </div> */}
           <Title text="メンバー"/>
           <Members members={members}/>
           </div>

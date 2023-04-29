@@ -16,7 +16,7 @@ export default function Members({ members }) {
   }
 
   return (
-    <div className="w-full lg:w-4/5 flex-wrap m-auto flex flex-row justify-center items-center ">
+    <div className="w-full lg:w-4/5 flex-wrap-reverse m-auto flex flex-row-reverse justify-center items-center ">
       {members.map((member) => (
         <>
           <div
@@ -95,7 +95,7 @@ export default function Members({ members }) {
             <div className="flex justify-center items-center space-x-3">
               <Link
                 className="bg-blue-800 text-xs text-white font-base px-4 py-2 rounded-md"
-                href="/organization/members/aguilar"
+                href={`${activeMember.portfolioUrl}`}
               >
                 ポートフォリオへ
               </Link>

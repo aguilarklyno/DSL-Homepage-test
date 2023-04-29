@@ -12,7 +12,6 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'images.microcms-assets.io',
-        port: '',
         pathname: '/assets/**',
       },
     ],

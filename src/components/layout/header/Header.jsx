@@ -26,7 +26,7 @@ function Header() {
 
   return (
       <div
-        className={`fixed z-20 flex justify-between pl-2 sm:pl-4 md:pl-8 items-center text-white transition-colors duration-300 w-full 
+        className={`fixed z-50 flex justify-between pl-2 sm:pl-4 md:pl-8 items-center text-white transition-colors duration-300 w-full 
         `}
       >
         <Link
