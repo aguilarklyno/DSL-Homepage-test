@@ -21,7 +21,7 @@ export default function Members({ members }) {
         <>
           <div
             key={member.id}
-            className="w-1/2 sm:w-1/3 p-2 m-auto flex flex-col space-y-1 justify-start items-center"
+            className="w-1/2 sm:w-1/3 p-6 m-auto flex flex-col space-y-1 justify-start items-center"
           >
             <div
               key={member.id}

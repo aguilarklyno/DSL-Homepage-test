@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import { client } from 'libs/client'
 import Title from '@/components/atoms/Title'
 import PageTitle from '@/components/atoms/PageTitle'
@@ -9,11 +8,11 @@ export default function index({ members }) {
 
   return (
     <main className="flex flex-col items-center">
-      <div className="w-[95%] sm:w-11/12 lg:w-4/5 m-auto base-layout rounded-t-3xl space-y-2 bg-blue-950/80 text-white mt-32">
+      <div className="text-gray-900 bg-gray-50 base-layout space-y-8 mt-20 pb-32 w-[90%] sm:w-11/12 lg:w-4/5 rounded-t-3xl border-[1px] border-gray-200 ">
         <PageTitle title="運営メンバー" subtitle="団体概要" />
-        <div className="w-full flex flex-col space-y-8">
+        <div className="w-full flex flex-col space-y-8 pb-40 text-black">
           {/* <Title text="組織図" /> */}
-          <Title text="メンバー"/>
+          <p className='w-4/5 mt-8 m-auto text-black text-xl font-semibold border-l-4 border-gray-500 p-2'>Core Members</p>
           <Members members={members}/>
           </div>
         </div>

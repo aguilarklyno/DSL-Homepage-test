@@ -5,7 +5,7 @@ import PageTitle from '@/components/atoms/PageTitle';
 export default function BlogId({ blog }) {
   return (
     <main  className='flex flex-col items-center'>
-      <div className='text-gray-900 bg-gray-50 base-layout space-y-8 mt-20 pb-32 w-full sm:w-11/12 lg:w-4/5 rounded-t-3xl border-[1px] border-gray-200 '>
+      <div className='text-gray-900 bg-gray-50 base-layout space-y-8 mt-20 pb-32 w-[90%] sm:w-11/12 lg:w-4/5 rounded-t-3xl border-[1px] border-gray-200 '>
         <PageTitle title={blog.title} subtitle={blog.date}/>
         <div
           className='w-11/12 sm:w-10/12 lg:w-9/12 text-xs sm:text-sm lg:text-md '
