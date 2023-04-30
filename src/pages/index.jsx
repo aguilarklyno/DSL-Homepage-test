@@ -39,11 +39,14 @@ export default function Home({ news, hero, bigNews }) {
       </Head>
 
       <header class="relative flex items-center justify-center h-screen overflow-hidden">
-        <p class="relative z-30 text-2xl text-white bg-opacity-50">
-          データサイエンス特化型学生団体<br/>
-          <span className="text-[3rem]">Data Science League へようこそ</span><br/>
-          - Welcome to Data Science League. -<br/>
-        </p>
+        <div class="text-[0.8rem] sm:text-[1.2rem] md:text-[1.6rem] lg:text-[2rem] xl:text-[2.4rem]
+                  relative z-30 text-white bg-opacity-50 font-thin w-4/5 lg:w-3/5">
+          Student organization specializing in data science.<br/>
+          <span className="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] font-light">Data Science League</span><br/>
+          <p className='text-[0.6rem] sm:text-[1rem] md:text-[1.3rem] lg:text-[1.7rem] xl:text-[2rem]'>
+            - Connecting Possibilities to the Future with the Power of Data. -
+          </p><br/>
+        </div>
         <video
           autoPlay
           loop
